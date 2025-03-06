@@ -290,12 +290,12 @@
                 <div class="col-8">
                     <div class="mb-3">
                         <div class="form-label">Имя</div>
-                        <input type="name" class="form-control">
+                        <input class="form-control">
                         <div class="form-text">Пожалуйста, укажите ваше имя.</div>
                     </div>
                     <div class="mb-3">
                         <div class="form-label">Email</div>
-                        <input type="email" class="form-control">
+                        <input class="form-control">
                         <div class="form-text">Пожалуйста, укажите вашу почту.</div>
                     </div>
                     <button type="submit" class="btn btn-primary">Отправить</button>
@@ -303,23 +303,80 @@
             </div>
             <div class="row text-center">
                 <div class="col-12">
-                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                        Button with data-bs-target
-                    </button>
-                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                        Button with data-bs-target
-                    </button>
-                    <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                        Button with data-bs-target
-                    </button>
-                </div>
-                <div class="collapse" id="collapseExample">
-                    <div class="card card-body">
-                        Some placeholder content for the collapse component. This panel is hidden by default but
-                        revealed when the user activates the relevant trigger.
+                    <div class="card mb-4 rounded-3 shadow-sm">
+                        <div class="card-header py-3">
+                            <h4 class="my-0 fw-normal">FAQ</h4>
+                        </div>
+                        <div class="col-12">
+
+
+                            <p class="d-inline-flex gap-1">
+                                <button class="btn btn-primary" data-bs-toggle="collapse"
+                                        data-bs-target="#multiCollapseExample1" aria-expanded="false"
+                                        aria-controls="multiCollapseExample1">Как купить?
+                                </button>
+                                <button class="btn btn-primary" data-bs-toggle="collapse"
+                                        data-bs-target="#multiCollapseExample2" aria-expanded="false"
+                                        aria-controls="multiCollapseExample2">Как доставить?
+                                </button>
+                                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#multiCollapseExample3" aria-expanded="false"
+                                        aria-controls="multiCollapseExample3">Какая гарантия?
+                                </button>
+                            </p>
+                            <div class="row">
+                                <div class="col">
+                                    <div class="collapse multi-collapse" id="multiCollapseExample1">
+                                        <div class="card card-body">
+                                            Очень просто!
+                                            За деньги
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="collapse multi-collapse" id="multiCollapseExample2">
+                                        <div class="card card-body">
+                                            Ваш хребет вам в помощь!
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col">
+                                    <div class="collapse multi-collapse" id="multiCollapseExample3">
+                                        <div class="card card-body">
+                                            До ворот
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse"-->
+                            <!--                                    data-bs-target="#howBuy">-->
+                            <!--                                Как купить?-->
+                            <!--                            </button>-->
+                            <!--                            <div class="collapse" id="howBuy">-->
+                            <!--                                <div class="card card-body">-->
+                            <!--                                    А кто спрашивает?-->
+                            <!--                                </div>-->
+                            <!--                            </div>-->
+                            <!--                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse"-->
+                            <!--                                    data-bs-target="#howDelivery">-->
+                            <!--                                Как доставить?-->
+                            <!--                            </button>-->
+                            <!--                            <div class="collapse" id="howDelivery">-->
+                            <!--                                <div class="card card-body">-->
+                            <!--                                    На своем горбе.-->
+                            <!--                                </div>-->
+                            <!--                            </div>-->
+                            <!--                            <button class="btn btn-primary" type="button" data-bs-toggle="collapse"-->
+                            <!--                                    data-bs-target="#guarantee">-->
+                            <!--                                Какая гарантия?-->
+                            <!--                            </button>-->
+                            <!--                            <div class="collapse" id="guarantee">-->
+                            <!--                                <div class="card card-body">-->
+                            <!--                                    Гарантия до ворот.-->
+                            <!--                                </div>-->
+                            <!--                            </div>-->
+                        </div>
                     </div>
                 </div>
             </div>
